@@ -1,6 +1,7 @@
 import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/gestures.dart'; // Import penting untuk fix trackpad
 import 'package:flutter/material.dart';
+import 'package:flutter/ui/home_screen.dart';
 
 Future<void> main() async {
   WidgetsFlutterBinding.ensureInitialized();
@@ -35,31 +36,6 @@ class TestApp extends StatelessWidget {
       scrollBehavior: MyCustomScrollBehavior(),
       // --- PERBAIKAN SELESAI ---
       home: const HomeScreen(),
-    );
-  }
-}
-
-class HomeScreen extends StatelessWidget {
-  const HomeScreen({super.key});
-
-  @override
-  Widget build(BuildContext context) {
-    return Scaffold(
-      body: Column(
-        children: [
-          SizedBox(
-            height: 50,
-            child: Placeholder(),
-          ),
-          Expanded(
-            child: Placeholder(),
-          ),
-          SizedBox(
-            height: 50,
-            child: Placeholder(),
-          ),
-        ],
-      ),
     );
   }
 }
