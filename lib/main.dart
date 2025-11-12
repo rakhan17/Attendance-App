@@ -1,7 +1,9 @@
 import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/gestures.dart'; // Import penting untuk fix trackpad
 import 'package:flutter/material.dart';
-import 'package:flutter/ui/home_screen.dart';
+import 'package:flutter_3/absent/absent_screen.dart';
+import 'package:flutter_3/attendance_history/attendance_history_screen.dart';
+import 'package:flutter_3/ui/home_screen.dart';
 
 Future<void> main() async {
   WidgetsFlutterBinding.ensureInitialized();
